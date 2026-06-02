@@ -1,0 +1,22 @@
+project: NeurIPS
+name: SemanticModel-ft_subj1-pt_subj257
+seed: 42
+pretrained_project: NeurIPS-official
+pretrained_name: SemanticModel-subj257
+
+subjs: [1]
+
+# training config
+num_epochs: 10
+train_batch_size: 96
+val_batch_size: 256
+learning_rate: 1.0e-4
+weight_decay: 0.01
+mixed_precision: "no"
+dtype: fp32
+gradient_accumulation_steps: 1
+resume_training: False
+scale_learning_rate: False
+epoch_interval_eval: 1
+epoch_interval_save: 20
+max_grad_norm: 0.1

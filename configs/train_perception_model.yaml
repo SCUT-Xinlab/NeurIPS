@@ -1,0 +1,28 @@
+project: NeurIPS
+name: PerceptionModel-subj1257
+seed: 42
+
+subjs: [1, 2, 5, 7]
+
+# training config
+num_epochs: 105
+train_batch_size: 8
+val_batch_size: 64
+learning_rate: 1.0e-4
+weight_decay: 0.01
+mixed_precision: "no"
+dtype: fp32
+gradient_accumulation_steps: 1
+resume_training: False
+scale_learning_rate: False
+epoch_interval_eval: 1
+epoch_interval_save: 50
+max_grad_norm: 0.1
+
+# model config
+model_hidden_dim: 4096
+model_num_blocks: 4
+model_dropout_input: 0.5
+model_dropout_block: 0.25
+model_upsampler_layer_per_block: 1
+model_maps_proj_dim: 512

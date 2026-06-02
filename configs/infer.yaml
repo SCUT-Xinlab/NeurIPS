@@ -1,0 +1,18 @@
+project_semantic: NeurIPS-official
+project_perception: NeurIPS-official
+name_semantic: SemanticModel-subj1257
+name_perception: PerceptionModel-subj1257
+seed: 42
+
+semantic_model_ckpt_name: last
+perception_model_ckpt_name: last
+reconstruction_name: reconstructions
+
+use_semantic_model: True
+use_perception_model: True
+num_inference_steps: 50
+text_image_mixup_ratio: 0.5
+guidance_scale: 7.5
+# batch_size: 64
+batch_size: 8
+latent_predict_ratio: 0.1

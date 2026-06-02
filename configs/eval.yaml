@@ -1,0 +1,5 @@
+project: NeurIPS-official
+name: SemanticModel-subj1257
+seed: 42
+rec_name: reconstructions
+device: cuda:0

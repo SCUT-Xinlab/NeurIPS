@@ -1,0 +1,39 @@
+project: NeurIPS
+name: SemanticModel-subj1257
+seed: 42
+
+subjs: [1, 2, 5, 7]
+
+# training config
+num_epochs: 505
+train_batch_size: 24
+val_batch_size: 256
+learning_rate: 1.0e-4
+weight_decay: 0.01
+mixed_precision: "no"
+dtype: fp32
+gradient_accumulation_steps: 1
+resume_training: False
+scale_learning_rate: False
+epoch_interval_eval: 1
+epoch_interval_save: 100
+max_grad_norm: 0.1
+
+# model config
+model_functional_hidden_level: 3
+model_functional_tokenizer_dims: [64, 128, 256, 512]
+model_structural_hidden_level: 1
+model_structural_tokenizer_dims: [16, 32, 64, 128, 256, 512]
+model_in_dim: 1
+model_embed_dim: 768
+model_dropout_tokenizer: 0.3
+model_encoder_depth: 12
+model_encoder_num_heads: 12
+model_encoder_intermediate_dim: 3072
+model_encoder_dropout_attention: 0.5
+model_moe_intermediate_dim: 512
+model_num_routed_experts: 16
+model_num_activated_experts: 6
+model_num_shared_experts: 2
+model_num_cls_tokens: 4
+model_num_global_tokens: 4

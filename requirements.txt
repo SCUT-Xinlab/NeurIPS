@@ -1,0 +1,17 @@
+torch==2.4.1
+torchvision==0.19.1
+transformers==4.38.2
+diffusers==0.31.0
+accelerate
+einops
+h5py
+kornia
+nibabel
+numpy
+pandas
+pycocotools
+scikit-learn
+scipy
+timm
+tqdm
+webdataset
